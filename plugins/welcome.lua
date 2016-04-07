@@ -58,7 +58,10 @@ local function description_rules(msg, nama)
          rules = data[tostring(msg.to.id)]["rules"]
          rules = "\nRules :\n"..rules.."\n"
       end
-      local sambutan = "سلام.به گروه '"..string.gsub(msg.to.print_name, "_", " ").."' \n CHANNEL: @MM_king_tm_chخوش آمدید\n\nلیست :#ورودی"
+      local sambutan = "سلام.به گروه '"..string.gsub(msg.to.print_name, "_", " ").."' \n 🌸خوش آمدید 🌸 
+🤖این ربات متعلق به تیم™M.M♔King‌🤖 
+😎به مابپیوندید🙂👇 
+@MM_king_tm_ch\n\nلیست :#ورودی"
       local text = sambutan..about..rules.."\n"
       local text = text.."خوش آمدید "..nama
       local receiver = get_receiver(msg)
@@ -89,7 +92,10 @@ local function run(msg, matches)
       description_rules(msg, nama)
    elseif matches[1] == "chat_del_user" then
        local bye_name = msg.action.user.first_name
-       return 'CHANNEL: @MM_king_tm_chخداحافظ '..bye_name..'\n\nلیست :#خروجی'
+       return 'CHANNEL: خدافظ دوست عزیز
+امید وارم برگردی
+خب خودمونو عشقه به چنل تیم من بیایید👇
+@MM_king_tm_ch '..bye_name..'\n\nلیست :#خروجی'
    end
 end
 
