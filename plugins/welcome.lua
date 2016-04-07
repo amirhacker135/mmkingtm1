@@ -92,10 +92,10 @@ local function run(msg, matches)
       description_rules(msg, nama)
    elseif matches[1] == "chat_del_user" then
        local bye_name = msg.action.user.first_name
-       return 'CHANNEL: خدافظ دوست عزیز
-امید وارم برگردی
-خب خودمونو عشقه به چنل تیم من بیایید👇
-@MM_king_tm_ch '..bye_name..'\n\nلیست :#خروجی'
+       return '🖐بای امیدوارم هرجا هستی خوش باشی👋 
+🤖این ربات متعلق به تیم™M.M♔King‌🤖 
+😎به مابپیوندید🙂👇 
+@MM_king_tm_ch'..bye_name..'\n\nلیست :#خروجی'
    end
 end
 
