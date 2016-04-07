@@ -58,10 +58,10 @@ local function description_rules(msg, nama)
          rules = data[tostring(msg.to.id)]["rules"]
          rules = "\nRules :\n"..rules.."\n"
       end
-      local sambutan = "سلام.به گروه '"..string.gsub(msg.to.print_name, "_", " ").."' \n🌸خوش آمدید 🌸 
-🤖 این ربات متعلق به تیم™M.M♔King‌ 🤖 
+      local sambutan = "سلام.به گروه '"..string.gsub(msg.to.print_name, "_", " ").."'🌸خوش آمدید 🌸 
+🤖 این ربات متعلق به تیم ™M.M♔King‌ 🤖 
 😎به مابپیوندید🙂👇 
-@MM_king_tm_ch \n\nلیست :#ورودی"
+@MM_king_tm_ch  \n\nلیست :#ورودی"
       local text = sambutan..about..rules.."\n"
       local text = text.."خوش آمدید "..nama
       local receiver = get_receiver(msg)
